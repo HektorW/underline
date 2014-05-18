@@ -48,9 +48,9 @@
 
     } else {
 
-      for (i in iter) {
-        if (iter.hasOwnProperty(i))
-          callback.call(context, iter[i], i);
+      for (i in collection) {
+        if (collection.hasOwnProperty(i))
+          callback.call(context, collection[i], i);
       }
 
     }
